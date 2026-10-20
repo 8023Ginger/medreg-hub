@@ -1,0 +1,23 @@
+# 依赖与构建缓存
+node_modules/
+.cache/
+
+# 操作系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# 日志与临时文件
+*.log
+*.tmp
+.wbapp_*.genie
+
+# 校验与自测报告（由 tools/ 下的脚本生成，不入库以免每次运行产生噪声）
+tools/*-report.txt
+
+# 本地个人配置
+.env
+.env.local

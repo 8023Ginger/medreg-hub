@@ -1,0 +1,28 @@
+{
+  "name": "medreg-hub",
+  "version": "1.5.0",
+  "private": true,
+  "description": "医械法规云 · MedReg Hub — 医疗器械法规全生命周期检索与溯源平台（纯静态、零运行时依赖）",
+  "keywords": [
+    "medical-device",
+    "regulatory",
+    "nmpa",
+    "compliance",
+    "static-site",
+    "offline-first"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "scripts": {
+    "validate": "node tools/validate.js",
+    "test": "node tools/smoke.js",
+    "build": "node tools/build-standalone.js",
+    "test:standalone": "node tools/smoke-standalone.js",
+    "check": "npm run validate && npm run test && npm run build && npm run test:standalone"
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
